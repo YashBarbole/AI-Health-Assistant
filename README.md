@@ -161,4 +161,4 @@ Project Link: [https://github.com/yourusername/health-ai-assistant](https://gith
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/YashBarbole)
+Made with ❤️ by [Yash Barbole](https://github.com/YashBarbole)
