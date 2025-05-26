@@ -1,0 +1,222 @@
+.diagnosis-container {
+  max-width: 500px;
+  margin: 0.75rem auto;
+  padding: 1.25rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05),
+              0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.diagnosis-header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.diagnosis-header h3 {
+  color: #1a365d;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.confidence-indicator {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  background-color: #f0f5ff;
+  color: #3b82f6;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.result-box {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.result-box:hover {
+  border-color: #cbd5e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.result-box-title {
+  color: #2d3748;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.result-box-title::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.patient-info {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.patient-info .result-box-title::before {
+  background-color: #4a5568;
+}
+
+.patient-info p {
+  margin: 0.25rem 0;
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.condition-box {
+  background-color: #f0f5ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.condition-box .result-box-title::before {
+  background-color: #3b82f6;
+}
+
+.condition-details {
+  font-size: 0.875rem;
+  color: #1e40af;
+  font-weight: 500;
+}
+
+.recommendations {
+  margin-top: 0.75rem;
+}
+
+.recommendations-box {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.recommendations-box .result-box-title::before {
+  background-color: #22c55e;
+}
+
+.recommendations ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.recommendations li {
+  padding: 0.4rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  color: #166534;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.recommendations li::before {
+  content: "✓";
+  color: #22c55e;
+  font-weight: bold;
+  position: absolute;
+  left: 0.4rem;
+  font-size: 0.75rem;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #64748b;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-style: italic;
+  background-color: #f8fafc;
+}
+
+.urgent-warning {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 3px solid #dc2626;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  color: #b91c1c;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.urgent-warning::before {
+  content: "⚠️";
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .diagnosis-container {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  .diagnosis-header h3 {
+    font-size: 1.125rem;
+  }
+
+  .result-box,
+  .patient-info,
+  .condition-box,
+  .recommendations-box,
+  .disclaimer {
+    padding: 0.625rem;
+  }
+
+  .result-box-title {
+    font-size: 0.813rem;
+  }
+
+  .patient-info p,
+  .condition-details,
+  .recommendations li {
+    font-size: 0.813rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .diagnosis-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .result-box,
+  .patient-info,
+  .condition-box,
+  .recommendations-box,
+  .disclaimer {
+    border: 1px solid #e2e8f0;
+    break-inside: avoid;
+  }
+} 
