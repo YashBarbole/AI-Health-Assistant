@@ -2,8 +2,6 @@
 
 A modern, AI-powered health assessment tool that provides preliminary health evaluations based on reported symptoms. Built with React and featuring a clean, professional user interface.
 
-![Health AI Assistant Screenshot](screenshot.png)
-
 ## ✨ Features
 
 - **Smart Symptom Analysis**: Advanced AI-powered analysis of symptoms across multiple medical categories
@@ -149,11 +147,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📬 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
 
-Project Link: [https://github.com/yourusername/health-ai-assistant](https://github.com/yourusername/health-ai-assistant)
+
+
+Project Link: [https://github.com/yourusername/health-ai-assistant](https://github.com/YashBarbole/health-ai-assistant)
 
 ## 🙏 Acknowledgments
 
@@ -163,4 +161,4 @@ Project Link: [https://github.com/yourusername/health-ai-assistant](https://gith
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Made with ❤️ by [Your Name](https://github.com/YashBarbole)
